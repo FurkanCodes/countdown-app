@@ -1,6 +1,9 @@
 {
   "name": "countdown",
   "version": "0.1.0",
+  "engines": {
+    "node": "18.8.0"
+  },
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.6.6",
