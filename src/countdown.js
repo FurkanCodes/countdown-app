@@ -41,7 +41,7 @@ export default function Cdown({ duration }) {
           }
         }}
       />
-      <div className='flex justify-evenly className="max-w-2xl mx-auto mt-8 text-xl font-medium text-white'>
+      <div className="flex justify-evenly max-w-2xl mx-auto mt-8 mb-8 text-xl font-medium text-white">
         <button
           className="transform  transition duration-500 hover:scale-125 flex justify-center items-center"
           onClick={handleStart}
