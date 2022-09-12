@@ -59,12 +59,14 @@ export default function App() {
                     {active === 'timer' && (
                       <Cdown duration={Math.floor(parseInt(inputRef.current.value) * 60 * 1000)} />
                     )}
-                    {active === '150mins' && <Cdown duration={9000000} />}
+                    {/* {active === '150mins' && <Cdown duration={9000000} />}
                     {active === '145mins' && <Cdown duration={8700000} />}
-                    {active === '60min' && <Cdown duration={3600000} />}
+                    {active === '60min' && <Cdown duration={3600000} />} */}
                   </div>
                   <div className="flex justify-evenly max-w-2xl mx-auto ptmt-2 text-xl font-medium text-black">
                     <input
+                      className="flex text-center"
+                      placeholder="TYPE IN MINUTES"
                       ref={inputRef}
                       type="text"
                       id="number"
