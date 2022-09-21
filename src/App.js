@@ -32,7 +32,7 @@ export default function App() {
             <Tab.List className="sticky text-sm font-medium text-white">
               <div className="text-2xl flex items-center justify-evenly h-24 sm:px-6 lg:px-8">
                 <Tab className="transform  transition duration-500 hover:scale-125 flex justify-center items-center">
-                  Timer
+                  Timerss
                 </Tab>
                 <Tab className="transform  transition duration-500 hover:scale-125 flex justify-center items-center">
                   Check Audio
