@@ -2,7 +2,7 @@ import Cdown from './countdown';
 import About from './about';
 import Audio from './audio';
 import './index.css';
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Tab } from '@headlessui/react';
 import { TabPanel } from '@material-tailwind/react';
 
@@ -12,14 +12,13 @@ export default function App() {
   const inputRef = useRef();
 
   const handleClick = () => {
-    if (active === '') {
-      setActive('timer');
-    } else if (active === 'timer') {
-      setActive('');
-    } else {
-      setActive('timer');
-      setButtonText('Click TWICE for new duration');
-    }
+    setActive(true);
+    // if (active === true) {
+    //   setActive(false);
+    // } else {
+    //   setActive(true);
+    //   setButtonText('Click TWICE for new duration');
+    // }
   };
   return (
     <div className="flex flex-col h-full min-h-screen bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r">
@@ -56,7 +55,7 @@ export default function App() {
                 <div className="max-w-2xl mx-auto mt-8 text-xl font-medium text-white">
                   <h2 className="">{!active && 'Time will be displayed here'}</h2>
                   <div className="mt-1 lg:text-9xl font-extrabold text-transparent uppercase tracking-tighest sm:text-6xl  bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text">
-                    {active === 'timer' && (
+                    {active === true && (
                       <Cdown duration={Math.floor(parseInt(inputRef.current.value) * 60 * 1000)} />
                     )}
                     {/* {active === '150mins' && <Cdown duration={9000000} />}
