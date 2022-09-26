@@ -13,12 +13,12 @@ export default function App() {
 
   const handleClick = () => {
     setActive(true);
-    // if (active === true) {
-    //   setActive(false);
-    // } else {
-    //   setActive(true);
-    //   setButtonText('Click TWICE for new duration');
-    // }
+    if (active === true) {
+      setActive(false);
+    } else {
+      setActive(true);
+      setButtonText('Click TWICE for new duration');
+    }
   };
   return (
     <div className="flex flex-col h-full min-h-screen bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r">
@@ -32,7 +32,7 @@ export default function App() {
             <Tab.List className="sticky text-sm font-medium text-white">
               <div className="text-2xl flex items-center justify-evenly h-24 sm:px-6 lg:px-8">
                 <Tab className="transform  transition duration-500 hover:scale-125 flex justify-center items-center">
-                  Timerss
+                  Timers
                 </Tab>
                 <Tab className="transform  transition duration-500 hover:scale-125 flex justify-center items-center">
                   Check Audio
