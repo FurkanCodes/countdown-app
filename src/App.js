@@ -12,7 +12,6 @@ export default function App() {
   const inputRef = useRef();
 
   const handleClick = () => {
-    setActive(true);
     if (active === true) {
       setActive(false);
     } else {
